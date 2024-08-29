@@ -3,8 +3,8 @@ name: two jobs
 on: push
 
 jobs:
-        jobLinux:
-                name: Job 01
+        job01:
+                name: Job Linux
                 runs-on: ubuntu-latest
                 steps:
                         - name: Etapa 01
@@ -13,8 +13,8 @@ jobs:
                           run: |
                                   echo "$(cat README.md)"
                                   uname -a
-        jobWindows:
-                name: Job 02
+        job02:
+                name: Job Windows
                 runs-on: windows-latest
                 steps:
                         - name: Etapa 01
