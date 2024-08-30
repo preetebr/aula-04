@@ -2,8 +2,12 @@ name: two jobs
 
 on: 
   push:
-      branches:
+        branches:
           - feature_new
+  workflow_dispatch:
+  schedule:
+      - cron: '0/45 * 2-5 * *'
+
 
 jobs:
         job01:
